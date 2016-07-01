@@ -3,7 +3,7 @@ example asp application using dotnet-core with fsharp
 
 **$ dotnet restore**
 
-$ dotnet run
+**$ dotnet run**
 
 
-TODO: fsproj file to enable intellisense
+*TODO: fsproj file to enable intellisense*
