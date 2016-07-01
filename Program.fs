@@ -9,9 +9,6 @@ module m1 =
   [<EntryPoint>]
   let main argv =
       printfn "running web stuff"
-      let builder = new WebHostBuilder()
-      let kestrel = builder.UseKestrel()
-      let startup = kestrel.UseStartup<Startup>()
-      let b = startup.Build()
-      b.Run()
+      let host = WebHostBuilder().UseKestrel().UseStartup<Startup>().Build()
+      host.Run()
       0 // return an integer exit code
